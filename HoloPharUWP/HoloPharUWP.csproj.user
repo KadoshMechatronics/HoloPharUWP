@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DeviceId>4CE3B45E-0530-04A7-0B7F-F404E7D5D220</DeviceId>
+    <UseEmulator>false</UseEmulator>
+    <UseSimulator>false</UseSimulator>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <BackgroundTaskDebugEngines>
+    </BackgroundTaskDebugEngines>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Source>C:\Users\Khalilme\Desktop\virtual-medical\virtual-3.png</Source>
+    <SmallTileSource>C:\Users\Khalilme\Desktop\virtual-medical\virtual-3.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Khalilme\Desktop\virtual-medical\virtual-3.png</MediumTileSource>
+    <WideTileSource>C:\Users\Khalilme\Desktop\virtual-medical\virtual-3.png</WideTileSource>
+    <LargeTileSource>C:\Users\Khalilme\Desktop\virtual-medical\virtual-3.png</LargeTileSource>
+    <AppIconSource>C:\Users\Khalilme\Desktop\virtual-medical\virtual-3.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Khalilme\Desktop\virtual-medical\virtual-3.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Khalilme\Desktop\virtual-medical\virtual-3.png</PackageLogoSource>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <CreateCleanLayout>false</CreateCleanLayout>
+    <UseSimulator>false</UseSimulator>
+    <DeviceId>475D2000-0BFD-816F-5DFF-91985AF2F434</DeviceId>
+    <UseEmulator>false</UseEmulator>
+  </PropertyGroup>
+</Project>

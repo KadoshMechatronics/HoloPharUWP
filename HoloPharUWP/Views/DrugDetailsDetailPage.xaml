@@ -1,0 +1,39 @@
+<Page
+    x:Class="HoloPharUWP.Views.DrugDetailsDetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ic="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
+    xmlns:views="using:HoloPharUWP.Views" Loaded="Page_Loaded"
+    mc:Ignorable="d">
+    <Grid
+        x:Name="ContentArea"
+        Background="{ThemeResource SystemControlBackgroundAltHighBrush}"
+        Margin="12,0,12,0">
+        <Grid Margin="40">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <TextBox Name="txtDose" Header="Generic Name" Grid.Row="0" Style="{StaticResource TextShow}" />
+            <TextBox Name="txtDirections" Header="Active Ingredient" Grid.Row="2" Style="{StaticResource TextShow}" />
+        </Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="WindowStates" CurrentStateChanged="WindowStates_CurrentStateChanged">         
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</Page>
